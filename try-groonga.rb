@@ -83,7 +83,7 @@ class TryGroonga < Sinatra::Base
 
     def receive_response
       response = ""
-      timeout = 5
+      timeout = 1
       loop do
         readables, = IO.select([@output], [], [], timeout)
         break if readables.nil?
