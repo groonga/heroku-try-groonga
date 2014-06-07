@@ -20,7 +20,6 @@ Try: http://try-groonga.herokuapp.com/
     % git clone https://github.com/groonga/heroku-try-groonga.git
     % cd heroku-try-groonga
     % bundle install
-    % gem install foreman
     % bundle exec foreman start
 
 Open: http://localhost:5000/
