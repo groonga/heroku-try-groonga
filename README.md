@@ -33,5 +33,4 @@ The MIT License.
 ## Help us!
 
   * Design me!
-  * Support scroll.
   * Support larger font size.
