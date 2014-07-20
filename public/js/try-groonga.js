@@ -43,9 +43,4 @@ jQuery(function($, undefined) {
     height: 400,
     prompt: "groonga> "
   });
-
-  $("#terminal").mousewheel(function(event) {
-    this.scrollTop += event.deltaY * -10;
-    return event.preventDefault();
-  });
 });
