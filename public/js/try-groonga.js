@@ -45,7 +45,7 @@ jQuery(function($, undefined) {
   });
 
   $("#terminal").mousewheel(function(event) {
-    this.scrollTop += deltaY * -10;
+    this.scrollTop += event.deltaY * -10;
     return event.preventDefault();
   });
 });
