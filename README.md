@@ -34,3 +34,4 @@ The MIT License.
 
   * Design me!
   * Support larger font size.
+  * Support copy & paste on OS X.
