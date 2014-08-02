@@ -12,3 +12,29 @@
     font-size: 16px;
     line-height: 120%;
 }
+
+/* bootstrap padding */
+body { padding-top: 51.5px }
+.header { color: #fff; }
+
+.terminal { border: 1px solid #0071BC; }
+html,body { height:100%; }
+.container {
+   min-height:100%;
+}
+
+@media screen and (min-height : 480px){
+   #footer {
+      background-color: #F5F5F5;
+   }
+}
+
+@media screen and (min-height : 780px){
+   #footer {
+      background-color: #F5F5F5;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      height: 140px;
+   }
+}
