@@ -35,3 +35,4 @@ The MIT License.
   * Design me!
   * Support larger font size.
   * Support save & restore Groonga database.
+  * Support pasting multiple commands.
