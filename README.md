@@ -36,3 +36,4 @@ The MIT License.
   * Support larger font size.
   * Support save & restore Groonga database.
   * Support pasting multiple commands.
+  * Integrate with [tutorial](http://groonga.org/docs/tutorial.html).
