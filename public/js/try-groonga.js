@@ -48,4 +48,20 @@ jQuery(function($, undefined) {
     this.scrollTop += event.deltaY * -10;
     return event.preventDefault();
   });
+
+  $("#paste-submit").click(function(event) {
+    var text = $("#paste-area").val();
+    var lines = text.replace(/\r\n|\r/g, "\n").split("\n");
+    for (var i = 0; i < lines.length; i++) {
+      var line = lines[i];
+      if (line === "") {
+        continue;
+      }
+      enqueueCommand(line, function(response) {
+        if ($("#paste-alert").prop("checked")) {
+          alert(response);
+        }
+      });
+    }
+  });
 });
