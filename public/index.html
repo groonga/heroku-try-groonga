@@ -30,17 +30,20 @@
     <div class="container-fluid">
       <div id="terminal"></div>
       <hr>
-      <div role="form">
-        <div class="form-group">
-          <label for="paste-area">paste area</label>
-          <textarea class="form-control" id="paste-area"></textarea>
+      <div class="row" role="form">
+        <div class="col-md-8">
+          <div class="form-group">
+            <label for="paste-area">paste area</label>
+            <textarea class="form-control" id="paste-area" rows="18"></textarea>
+          </div>
+          <input type="button" class="btn btn-default" id="paste-submit" value="submit" />
         </div>
-        <div class="checkbox">
-          <label class="checkbox-inline">
-            <input type="checkbox" id="paste-alert">alert response</input>
-          </label>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="paste-response">response</label>
+            <textarea class="form-control" id="paste-response" rows="20" readonly></textarea>
+          </div>
         </div>
-        <input type="button" class="btn btn-default" id="paste-submit" value="submit" />
       </div>
       <hr>
       <nav>

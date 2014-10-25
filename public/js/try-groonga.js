@@ -50,17 +50,21 @@ jQuery(function($, undefined) {
   });
 
   $("#paste-submit").click(function(event) {
+    $("#paste-response").val("");
     var text = $("#paste-area").val();
     var lines = text.replace(/\r\n|\r/g, "\n").split("\n");
+    var responses = new Array();
     for (var i = 0; i < lines.length; i++) {
       var line = lines[i];
       if (line === "") {
         continue;
       }
       enqueueCommand(line, function(response) {
-        if ($("#paste-alert").prop("checked")) {
-          alert(response);
+        if (response.length == 0) {
+          return;
         }
+        responses.push(response)
+        $("#paste-response").val(responses.join("\n,\n"));
       });
     }
   });
