@@ -64,7 +64,7 @@ jQuery(function($, undefined) {
           return;
         }
         responses.push(response)
-        $("#paste-response").val(responses.join("\n,\n"));
+        $("#paste-response").val(responses.join("\n\n"));
       });
     }
   });
