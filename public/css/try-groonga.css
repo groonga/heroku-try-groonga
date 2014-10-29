@@ -23,18 +23,6 @@ html,body { height:100%; }
    min-height:100%;
 }
 
-@media screen and (min-height : 480px){
    #footer {
       background-color: #F5F5F5;
    }
-}
-
-@media screen and (min-height : 780px){
-   #footer {
-      background-color: #F5F5F5;
-      width: 100%;
-      position: absolute;
-      bottom: 0;
-      height: 140px;
-   }
-}
