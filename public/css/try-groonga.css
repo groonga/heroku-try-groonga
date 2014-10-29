@@ -20,9 +20,9 @@ body { padding-top: 51.5px }
 .terminal { border: 1px solid #0071BC; }
 html,body { height:100%; }
 .container {
-   min-height:100%;
+    min-height:100%;
 }
 
 #footer {
-  background-color: #F5F5F5;
+    background-color: #F5F5F5;
 }
