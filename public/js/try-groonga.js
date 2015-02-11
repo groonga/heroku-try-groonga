@@ -6,7 +6,7 @@ jQuery(function($, undefined) {
     var sendCommand = function() {
       var success = function(data, textStatus, jqXHR) {
         var response;
-        if (typeof data == "string") {
+        if (typeof data === "string") {
           response = data;
         } else {
           response = JSON.stringify(data, undefined, 2);
@@ -22,7 +22,7 @@ jQuery(function($, undefined) {
     };
 
     sendCommandQueue.push(sendCommand);
-    if (sendCommandQueue.length == 1) {
+    if (sendCommandQueue.length === 1) {
       sendCommand();
     }
   }
@@ -33,7 +33,7 @@ jQuery(function($, undefined) {
     }
 
     enqueueCommand(command, function(response) {
-      if (response.length == 0) {
+      if (response.length === 0) {
         return;
       }
       term.echo(response);
@@ -60,7 +60,7 @@ jQuery(function($, undefined) {
         continue;
       }
       enqueueCommand(line, function(response) {
-        if (response.length == 0) {
+        if (response.length === 0) {
           return;
         }
         responses.push(response)
