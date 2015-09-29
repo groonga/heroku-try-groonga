@@ -3,7 +3,7 @@ GEM
   specs:
     foreman (0.78.0)
       thor (~> 0.19.1)
-    passenger (5.0.14)
+    passenger (5.0.20)
       rack
       rake (>= 0.8.1)
     rack (1.6.4)
@@ -24,3 +24,6 @@ DEPENDENCIES
   foreman
   passenger
   sinatra
+
+BUNDLED WITH
+   1.10.5
