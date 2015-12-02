@@ -63,7 +63,7 @@ jQuery(function($, undefined) {
         if (response.length === 0) {
           return;
         }
-        responses.push(response)
+        responses.push(response);
         $("#paste-response").val(responses.join("\n\n"));
       });
     }
